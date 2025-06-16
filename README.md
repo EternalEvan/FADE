@@ -10,7 +10,7 @@ We introduce FADE—a training-free yet highly effective video editing approach 
 
 ## 📋 To-Do List
 
-* [] Release model and inference code.
+* [ ] Release model and inference code.
 
 
 ## 💡 Pipeline

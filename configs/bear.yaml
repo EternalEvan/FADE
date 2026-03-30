@@ -1,0 +1,19 @@
+start_latent: latent_trajectory
+verbose: false
+guiders:
+    - name: cfg
+      g_scale: 6.
+      kwargs:
+        is_source_guidance: false
+    - name: self_attn_map_l2_appearance_cogvideo_filter
+      g_scale: 1.
+      kwargs:
+        self_attn_gs: 5000
+        app_gs: 0
+        new_features: true
+        total_first_steps: 30
+noise_rescaling_setup:
+    type: range_other_on_cfg_norm
+    init_setup:
+        - 0.33
+        - 3.0
